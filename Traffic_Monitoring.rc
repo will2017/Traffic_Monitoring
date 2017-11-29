@@ -1,0 +1,227 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Simplified, PRC) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Traffic_Monitoring.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Traffic_Monitoring.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TRAFFIC_MONITORING_DIALOG DIALOGEX 0, 0, 256, 273
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    LTEXT           "...",IDC_STATIC_CONTENT1,49,47,49,8
+    CONTROL         "",IDC_SEPARATE,"Static",SS_BLACKRECT | NOT WS_VISIBLE,0,129,256,1
+    LTEXT           "Cur Rate：",IDC_STATIC,8,47,41,8
+    LTEXT           "Data：",IDC_STATIC,24,89,25,8
+    LTEXT           "Total：",IDC_STATIC,105,2,32,8
+    LTEXT           "...",IDC_STATIC_CONTENT3,49,89,52,8
+    LTEXT           "...",IDC_STATIC_CONTENT2,103,47,57,8
+    LTEXT           "...",IDC_STATIC_CONTENT4,103,89,54,8
+    LTEXT           "0",IDC_STATIC_TOL_FLOW,134,2,29,8
+    PUSHBUTTON      "Start",IDC_BUTTON1,84,14,23,22,BS_BITMAP
+    PUSHBUTTON      "Reset",IDC_BUTTON2,111,14,23,22,BS_BITMAP
+    LTEXT           "Avg Rate：",IDC_STATIC,8,61,41,8
+    LTEXT           "...",IDC_STATIC_DL_AVG,49,61,54,8
+    LTEXT           "...",IDC_STATIC_UL_AVG,103,62,53,8
+    CTEXT           "00:00:00",IDC_STATIC1,5,14,77,23,0,WS_EX_STATICEDGE
+    LTEXT           "Max Rate：",IDC_STATIC,8,75,41,8
+    LTEXT           "...",IDC_STATIC_DL_MAX,49,75,49,8
+    LTEXT           "...",IDC_STATIC_UL_MAX,103,75,48,8
+    CONTROL         "CSV",IDC_CHECK_CSV,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,0,2,25,10
+    CONTROL         "JPG",IDC_CHECK_IMG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,24,2,24,10
+    CONTROL         "DUT",IDC_RADIO_DUT,"Button",BS_AUTORADIOBUTTON,147,16,28,10
+    CONTROL         "Benchmark",IDC_RADIO_BEN,"Button",BS_AUTORADIOBUTTON,147,29,48,11
+    EDITTEXT        IDC_EDIT_DUT,177,13,79,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BEN,198,29,58,14,ES_AUTOHSCROLL
+    CONTROL         "LAN",IDC_RADIO_LAN,"Button",BS_AUTORADIOBUTTON | WS_GROUP,160,43,25,10
+    CONTROL         "WIFI",IDC_RADIO_WIFI,"Button",BS_AUTORADIOBUTTON,188,43,28,10
+    CONTROL         "LTE",IDC_RADIO_LTE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,160,58,24,10
+    CONTROL         "3G",IDC_RADIO_3G,"Button",BS_AUTORADIOBUTTON,188,58,23,10
+    CONTROL         "Good",IDC_RADIO_Good,"Button",BS_AUTORADIOBUTTON | WS_GROUP,160,73,27,10
+    CONTROL         "Weak",IDC_RADIO_Weak,"Button",BS_AUTORADIOBUTTON,188,73,29,10
+    CONTROL         "UL",IDC_RADIO_UL,"Button",BS_AUTORADIOBUTTON | WS_GROUP,160,88,21,10
+    CONTROL         "DL",IDC_RADIO_DL,"Button",BS_AUTORADIOBUTTON,188,88,19,10
+    CONTROL         "UL+DL",IDC_RADIO_ULDL,"Button",BS_AUTORADIOBUTTON,214,88,33,10
+    EDITTEXT        IDC_EDIT_CYCLE,216,104,24,12,ES_AUTOHSCROLL
+    LTEXT           "Interval：",IDC_STATIC,177,106,40,11
+    LTEXT           "S",IDC_STATIC,241,106,8,8
+    RTEXT           "Auto Avg：",IDC_STATIC_No,0,104,49,12
+    COMBOBOX        IDC_COMBO2,169,0,87,62,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "...",IDC_STATIC_NUM,49,104,107,10
+    CONTROL         "Auto",IDC_RADIO_AUTO,"Button",BS_AUTORADIOBUTTON,51,2,27,10
+    CONTROL         "MAN",IDC_RADIO_MAN,"Button",BS_AUTORADIOBUTTON,79,2,25,10
+    LTEXT           "anqingli.com",IDC_STATIC,207,117,49,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "FileDescription", "TM"
+            VALUE "InternalName", "TM"
+            VALUE "OriginalFilename", "Traffic_Monitoring.EXE"
+            VALUE "ProductName", "Traffic_Monitoring 应用程序"
+            VALUE "ProductVersion", "0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_TRAFFIC_MONITORING_DIALOG, DIALOG
+    BEGIN
+        VERTGUIDE, 49
+        VERTGUIDE, 114
+        VERTGUIDE, 147
+        BOTTOMMARGIN, 270
+        HORZGUIDE, 14
+        HORZGUIDE, 36
+        HORZGUIDE, 44
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    MENUITEM "网卡选择",                        65535
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_PLAY         BITMAP                  "res\\play.bmp"
+IDB_BITMAP_RESET        BITMAP                  "res\\reset.bmp"
+IDB_BITMAP_STOP         BITMAP                  "res\\stop.bmp"
+#endif    // Chinese (Simplified, PRC) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Traffic_Monitoring.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
